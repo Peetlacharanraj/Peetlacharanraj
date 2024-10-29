@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap');
+
+*{
+ margin: 0;
+ padding:0;
+ font-family:"Poppins" ;
+}
+body{
+    background: none;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+
+.vbar{
+padding:10px 10%;
+}
+nav{
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+    
+}
+
+.logo{
+    width: 140px;
+    text-decoration: none;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 10px;
+}
+nav ul li a{
+    color:rgb(22, 53, 226);
+    text-decoration: none;
+    font: size 18px; 
+    position: relative;
+}
+nav ul li a:hover:after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: brown;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+nav ul li a:before{
+    content: '';
+    width: 1px;
+    height: 3px;
+    background-color: brown;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.box{
+    display: grid;
+    
+    
+}
+.hero{
+    margin-top: 60px;
+   display: grid;
+    grid-template-columns: 0.1fr 1fr 1fr;
+    align-items: center;
+    
+}
+
+.image img{
+    margin-left: 20px;
+    width: 100%;
+}
+.header-text h2{
+    color: rgba(242, 58, 58, 0.93);
+    margin: 5px 0px;
+}
+.header-text h4{
+    margin: 5px 0px;
+}
+.header-text button a{
+    text-decoration: none;
+    background-color: rgb(53, 16, 216);
+    text-align: center;
+    -webkit-text-fill-color:white;
+}
+.cont ul li a{
+      list-style: none;
+      text-decoration: none;
+      margin: 10px 0;
+}
+.ctme {
+    display: none; 
+}
+.ctme {
+    display: block;
+}
+
+#about{
+    margin-top: 40px;
+}
+.heading{
+    text-align: center;
+}
+.heading span{
+    color: greenyellow;
+}
+.about-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2fr;
+    margin-top: 20px;
+}
+
+.about-image img {
+    width: 80%;
+    height: auto;
+    border-radius: 0.5rem;
+
+}
+.about-text{
+    margin-top: 30px;
+}
+.about-text p{
+    margin: 20px 0px;
+}
+.info-box{
+    margin: 20px 0px;
+}
+.btn{
+    text-decoration: none;
+    background-color: blue;
+    text-align: center;
+    -webkit-text-fill-color:white;
+}
+.info-box a {
+    text-decoration: none;
+    -webkit-text-fill-color:black;
+}
+
+.skills-heading{
+    margin-top: 30px;
+    text-align: center; 
+}
+.skills-heading span{
+    color: greenyellow;
+}
+.about-skills{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.skills image img {
+    width: 70%;
+    margin-left: 5rem;
+}
+.bars-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding: 1rem 0;
+}
+.light-bar{
+    position: absolute;
+    bottom: 0;
+    height: 0.5rem;
+    width: 100%;
+    background-color:blueviolet;
+    border-radius: 0.5rem;
+}
+.percentage-bar {
+    position: absolute;
+    bottom: 0;
+    height: 0.5rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    background-color: rgb(211, 28, 28) ;
+}
+.percentage-bar-mysql-bar{
+    position: absolute;
+    bottom: 0;
+    height: 0.5rem;
+    border-radius: 0.5rem;
+    width: 75%;
+    background-color: rgb(211, 28, 28) ;
+}
+.percentage-bar-java-bar{
+    position: absolute;
+    bottom: 0;
+    height: 0.5rem;
+    border-radius: 0.5rem;
+    width: 70%;
+    background-color: rgb(211, 28, 28) ;
+}
+.percentage-bar-html-bar{
+    position: absolute;
+    bottom: 0;
+    height: 0.5rem;
+    border-radius: 0.5rem;
+    width: 70%;
+    background-color: rgb(211, 28, 28) ;
+}
+.services-heading{
+    margin-top: 30px;
+    text-align: center;
+}
+.services-heading span{
+    color: chartreuse;
+}
+
+#services{
+   
+    display: grid;
+   grid-template-columns:repeat (auto-fit ) , minmax(200px, auto);
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+ .services-list{
+display: flex;
+gap: 1rem;
+margin-top: 20px;
+
+}
+.services-image{
+    display: grid;
+    text-align: center;
+    padding: 40px;
+    width: 220px;
+    box-shadow: 0 2px 7px rgba(43, 202, 200, 0.749);
+    border-bottom: 2px, solid var(color);
+    border-radius: 0.5rem;
+} 
+.services-image i {
+    font-size: 80px;
+    
+
+}
+.services-image span{
+    font-size: 20px;
+}
+
+.services-image a{
+    text-decoration: none;
+    font-size: 20px;
+
+}
+.portfolio-heading{
+    margin-top: 30px;
+    text-align: center;
+}
+.portfolio-heading span{
+    color:greenyellow ;
+}
+.portfolio-list{
+    
+    display: grid;
+   grid-template-columns: repeat(auto-fit, minmax( 300px,auto));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.portfolio-list{
+   display: ;
+}
+
+.portfolio-images{
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+
+.portfolio-images img{
+    display: block;
+    width: 100% ;
+}
+
+.portfolio-images img:hover{
+        transform: scale(1.1);
+        transition: 1s;
+}
+
+.contact{
+    margin-top: 40px;
+    text-align:center;
+    
+}
+.contact span{
+    color: greenyellow;
+}
+.contact-me input{
+    width: 100%;
+    height: 30px;
+    border: 0;
+    outline:none;
+    background-color:lightblue;
+}
+.contact-me textarea{
+    width: 100%;
+    border: 0;
+    outline:none;
+    background-color:lightblue;
+}
+ .submit{
+    margin: auto;
+    margin-top: 20px;
+   display: flex;
+    background-color: blue;
+    -webkit-text-fill-color:white;
+    
+}   
